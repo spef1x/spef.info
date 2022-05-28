@@ -2,12 +2,11 @@
 
 DESCRIPTION:
 
-KNOX is a clean, modern, and elegant free coming soon website template. Its thin line elements, 
-great use of whitespace, and nice typography give the template a professional, classy design. 
-It is not just aesthetically pleasing it also has the essential functions you need to maintain 
-and engage visitors, and collect new leads while working on your website. KNOX comes in three 
-style variants: static, slideshow, and particle background.
-
+AUGUSTINE is a clean and minimalist one-page personal website template for creative individuals 
+and professionals. It is the perfect solution for creating a striking online presence where you 
+can highlight your best works and showcase your skills and credentials. AUGUSTINE comes with all 
+the essential website components and features for creating an outstanding and great-looking 
+online resume that would grab everyone's attention.
 
 ==================================================================================================
 
@@ -66,13 +65,12 @@ If possible, kindly send us the site's url where the template is being used.
 Also, keep your Paypal receipt as proof of payment and your good to go.
 
 
-
 ------------------------------------------------------------------------------------------------------ 
 
 
 SUPPORT:
     
-Since KNOX is distributed for free, support is not offered. KNOX is coded according 
+Since AUGUSTINE is distributed for free, support is not offered. AUGUSTINE is coded according 
 to current web standards and we did our best to make the template easy to use and modify.
 If you have minimum web development experience, you can easily modify the template. 
 However, If you're still new to HTML and CSS, I suggest that you visit the 
@@ -89,28 +87,14 @@ javascript in your skill-set, you can also check out these tutorials:
 
 
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ 
 
 
-USING THE MAILCHIMP FORM:
+GET THE LATEST VERSION:
 
-To use the mailchimp form you need a mailchimp url. To get the mailchimp url, login to 
-your mailchimp account, click the Audience menu and select signup forms. Then choose 
-embedded forms and select unstyled form. In the generated form code get the value of 
-the form ACTION attribute and use it as your mailchimp url. Open the main.js file located
-in the template's "js" folder and look for this line of code: 
+We update our templates on a regular basis so to make sure that you have the latest version, 
+always download the template files directly on our website(https://www.styleshout.com/)
 
-const cfg = {
-
-    // Countdown Timer Final Date
-    finalDate : 'December 04, 2025 00:00:00',
-    // MailChimp URL
-    mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
-
-};
-
-
-Replace the value of mailChimpURL with your mailchimp url.
 
 
 
@@ -122,13 +106,11 @@ SOURCES AND CREDITS:
 I've used the following resources as listed.
 
 Fonts:
- - Lora Font (https://fonts.google.com/specimen/Lora)
- - Gothic A1 Font (https://fonts.google.com/specimen/Gothic+A1)
- - Marcellus Font (https://fonts.google.com/specimen/Marcellus)
+ - Inter Font (https://fonts.google.com/specimen/Inter)
+ - Castoro Font (https://fonts.google.com/specimen/Castoro)
 
 Icons:
  - Boxicons (https://boxicons.com/)
- - TeenyIcons (https://teenyicons.com/)
 
 Stock Photos and Graphics:
  - Unsplash.com (https://unsplash.com/)
@@ -137,6 +119,8 @@ Javascript Files:
  - Swiper (https://swiperjs.com/)
  - MoveTo.js (https://github.com/hsnaydd/moveTo)
  - Prism.js (https://prismjs.com/)
+ - Anime JS (https://animejs.com/)
+ - PhotoSwipe (https://photoswipe.com/)
 
 -------------------------------------------------------------------------------------------------------
 
