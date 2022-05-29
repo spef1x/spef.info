@@ -1,6 +1,5 @@
 /* ===================================================================
- * Augustine 1.0.0 - Main JS
- *
+ * Tyndale 1.0.0 - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -9,7 +8,7 @@
     'use strict';
 
 
-    /* animations
+   /* animations
     * -------------------------------------------------- */
     const tl = anime.timeline( {
         easing: 'easeInOutCubic',
@@ -38,17 +37,21 @@
         opacity: [0, 1]
     }, '-=200')
     .add({
+        targets: ['.s-intro__text', '.s-intro__about'],
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(400)
+    })
+    .add({
         targets: '.s-intro__bg',
         opacity: [0, 1],
         duration: 1000,
     })
     .add({
-        targets: ['.animate-on-load'],
-        translateY: [100, 0],
+        targets: ['.s-intro__scroll-down'],
         opacity: [0, 1],
-        delay: anime.stagger(400)
+        duration: 400
     });
-
 
 
    /* preloader
@@ -69,7 +72,6 @@
     }; // end ssPreloader
 
 
-
    /* mobile menu
     * ---------------------------------------------------- */ 
     const ssMobileMenu = function() {
@@ -80,15 +82,15 @@
 
         if (!(toggleButton && mainNavWrap)) return;
 
-        toggleButton.addEventListener('click', function(e) {
-            e.preventDefault();
+        toggleButton.addEventListener('click', function(event) {
+            event.preventDefault();
             toggleButton.classList.toggle('is-clicked');
             siteBody.classList.toggle('menu-is-open');
         });
 
         mainNavWrap.querySelectorAll('.s-header__nav a').forEach(function(link) {
 
-            link.addEventListener("click", function(e) {
+            link.addEventListener("click", function(event) {
 
                 // at 900px and below
                 if (window.matchMedia('(max-width: 900px)').matches) {
@@ -110,34 +112,170 @@
     }; // end ssMobileMenu
 
 
-
-   /* sticky header
+   /* highlight active menu link on pagescroll
     * ------------------------------------------------------ */
-    const ssStickyHeader = function() {
+    const ssScrollSpy = function() {
 
-        const hdr = document.querySelector('.s-header');
-        if (!hdr) return;
+        const sections = document.querySelectorAll('.target-section');
 
-        // const triggerHeight = window.pageYOffset + hdr.getBoundingClientRect().top;
-        const triggerHeight = 1;
+        // Add an event listener listening for scroll
+        window.addEventListener('scroll', navHighlight);
 
-        window.addEventListener('scroll', function () {
+        function navHighlight() {
+        
+            // Get current scroll position
+            let scrollY = window.pageYOffset;
+        
+            // Loop through sections to get height(including padding and border), 
+            // top and ID values for each
+            sections.forEach(function(current) {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 50;
+                const sectionId = current.getAttribute('id');
+            
+               /* If our current scroll position enters the space where current section 
+                * on screen is, add .current class to parent element(li) of the thecorresponding 
+                * navigation link, else remove it. To know which link is active, we use 
+                * sectionId variable we are getting while looping through sections as 
+                * an selector
+                */
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
+                } else {
+                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.remove('current');
+                }
+            });
+        }
 
-            let loc = window.scrollY;
+    }; // end ssScrollSpy
 
-            if (loc > triggerHeight) {
-                hdr.classList.add('sticky');
-            } else {
-                hdr.classList.remove('sticky');
+
+   /* animate elements if in viewport
+    * ------------------------------------------------------ */
+    const ssAnimateOnScroll = function() {
+
+        const blocks = document.querySelectorAll('[data-animate-block]');
+
+        window.addEventListener('scroll', animateOnScroll);
+
+        function animateOnScroll() {
+
+            let scrollY = window.pageYOffset;
+
+            blocks.forEach(function(current) {
+
+                const viewportHeight = window.innerHeight;
+                const triggerTop = (current.offsetTop + (viewportHeight * .2)) - viewportHeight;
+                const blockHeight = current.offsetHeight;
+                const blockSpace = triggerTop + blockHeight;
+                const inView = scrollY > triggerTop && scrollY <= blockSpace;
+                const isAnimated = current.classList.contains('ss-animated');
+
+                if (inView && (!isAnimated)) {
+
+                    anime({
+                        targets: current.querySelectorAll('[data-animate-el]'),
+                        opacity: [0, 1],
+                        translateY: [100, 0],
+                        delay: anime.stagger(200, {start: 200}),
+                        duration: 800,
+                        easing: 'easeInOutCubic',
+                        begin: function(anim) {
+                            current.classList.add('ss-animated');
+                        }
+                    });
+
+                    if (current.classList.contains('about-stats')) {
+
+                        let counters = current.querySelectorAll('[data-animate-el] .stats__count');
+
+                        counters.forEach(function(counter, i) {
+
+                            let val = +counter.dataset.counter;
+                            let valSpan = counter.querySelectorAll('span')[0];
+                            
+                            valSpan.innerText = '0';
+
+                            setTimeout(function() {
+                                anime({
+                                    targets: valSpan,
+                                    innerText: [0, val],
+                                    easing: 'linear',
+                                    round: 1,
+                                    duration: 2000
+                                });
+                            }, i * 200);
+                            
+                        });
+                    }
+                }
+            });
+        }
+
+    }; // end ssAnimateOnScroll
+
+
+   /* swiper
+    * ------------------------------------------------------ */ 
+    const ssSwiper = function() {
+
+        const clientsSwiper = new Swiper('.clients', {
+
+            slidesPerView: 4,
+            spaceBetween: 4,
+            slideClass: 'clients__slide',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is > 400px
+                401: {
+                    spaceBetween: 8
+                },
+                // when window width is > 900px
+                901: {
+                    slidesPerView: 5,
+                    spaceBetween: 10
+                },
+                // when window width is > 1200px
+                1201: {
+                    slidesPerView: 6,
+                    spaceBetween: 10
+                }
             }
-
         });
 
-    }; // end ssStickyHeader
+        const testimonialsSwiper = new Swiper('.testimonial-slider', {
+
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is > 400px
+                401: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is > 800px
+                801: {
+                    slidesPerView: 2,
+                    spaceBetween: 32
+                },
+                // when window width is > 1200px
+                1201: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                }
+            }
+         });
+
+    }; // end ssSwiper
 
 
-
-   /* photoswipe
+    /* photoswipe
     * ----------------------------------------------------- */
     const ssPhotoswipe = function() {
 
@@ -179,9 +317,9 @@
 
             let thumbLink = folioItem.querySelector('.folio-item__thumb-link');
 
-            thumbLink.addEventListener('click', function(e) {
+            thumbLink.addEventListener('click', function(event) {
 
-                e.preventDefault();
+                event.preventDefault();
 
                 let options = {
                     index: i,
@@ -198,73 +336,26 @@
     };  // end ssPhotoSwipe
 
 
-
-   /* animate elements if in viewport
+   /* video Lightbox
     * ------------------------------------------------------ */
-    const ssAnimateOnScroll = function() {
+    const ssVideoLightbox = function() {
 
-        const blocks = document.querySelectorAll('[data-animate-block]');
+        const videoLink = document.querySelector('.video-link');
+        if (!videoLink) return;
 
-        window.addEventListener('scroll', animateOnScroll);
+        videoLink.addEventListener('click', function(event) {
 
-        function animateOnScroll() {
+            const vLink = this.getAttribute('href');
+            const iframe = "<iframe src='" + vLink + "' frameborder='0'></iframe>";
 
-            let scrollY = window.pageYOffset;
+            event.preventDefault();
 
-            blocks.forEach(function(current) {
-
-                const viewportHeight = window.innerHeight;
-                const triggerTop = (current.offsetTop + (viewportHeight * .1)) - viewportHeight;
-                const blockHeight = current.offsetHeight;
-                const blockSpace = triggerTop + blockHeight;
-                const inView = scrollY > triggerTop && scrollY <= blockSpace;
-                const isAnimated = current.classList.contains('ss-animated');
-
-                if (inView && (!isAnimated)) {
-
-                    anime({
-                        targets: current.querySelectorAll('[data-animate-el]'),
-                        opacity: [0, 1],
-                        translateY: [100, 0],
-                        delay: anime.stagger(200, {start: 200}),
-                        duration: 600,
-                        easing: 'easeInOutCubic',
-                        begin: function(anim) {
-                            current.classList.add('ss-animated');
-                        }
-                    });
-                }
-            });
-        }
-
-    }; // end ssAnimateOnScroll
-
-
-
-   /* swiper
-    * ------------------------------------------------------ */ 
-    const ssSwiper = function() {
-
-        const mySwiper = new Swiper('.swiper', {
-
-            slidesPerView: 1,
-            effect: 'slide',
-            spaceBetween: 160,
-            centeredSlides: true,
-            speed: 1000,
-            navigation: {
-                nextEl: ".testimonial-slider__next",
-                prevEl: ".testimonial-slider__prev",
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }
+            const instance = basicLightbox.create(iframe);
+            instance.show()
 
         });
 
-    }; // end ssSwiper
-
+    }; // end ssVideoLightbox
 
 
    /* alert boxes
@@ -275,10 +366,10 @@
   
         boxes.forEach(function(box){
 
-            box.addEventListener('click', function(e) {
-                if (e.target.matches('.alert-box__close')) {
-                    e.stopPropagation();
-                    e.target.parentElement.classList.add('hideit');
+            box.addEventListener('click', function(event) {
+                if (event.target.matches('.alert-box__close')) {
+                    event.stopPropagation();
+                    event.target.parentElement.classList.add('hideit');
 
                     setTimeout(function(){
                         box.style.display = 'none';
@@ -288,31 +379,6 @@
         })
 
     }; // end ssAlertBoxes
-
-
-
-    /* back to top
-    * ------------------------------------------------------ */
-    const ssBackToTop = function() {
-
-        const pxShow = 900;
-        const goTopButton = document.querySelector(".ss-go-top");
-
-        if (!goTopButton) return;
-
-        // Show or hide the button
-        if (window.scrollY >= pxShow) goTopButton.classList.add("link-is-visible");
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY >= pxShow) {
-                if(!goTopButton.classList.contains('link-is-visible')) goTopButton.classList.add("link-is-visible")
-            } else {
-                goTopButton.classList.remove("link-is-visible")
-            }
-        });
-
-    }; // end ssBackToTop
-
 
 
    /* smoothscroll
@@ -358,19 +424,18 @@
     }; // end ssMoveTo
 
 
-
-   /* initialize
+   /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
 
         ssPreloader();
         ssMobileMenu();
-        ssStickyHeader();
-        ssPhotoswipe();
+        ssScrollSpy();
         ssAnimateOnScroll();
         ssSwiper();
+        ssPhotoswipe();
+        ssVideoLightbox();
         ssAlertBoxes();
-        ssBackToTop();
         ssMoveTo();
 
     })();

@@ -27,341 +27,369 @@
 
 </head>
 
-
 <body id="top">
 
 
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader" class="line"></div>
+        <div id="loader">
+        </div>
     </div>
 
 
     <!-- page wrap
     ================================================== -->
-    <div id="page" class="s-pagewrap">
+    <div class="s-pagewrap">
+
 
 
         <!-- # site header 
         ================================================== -->
-        <header id="masthead" class="s-header">
+        <header class="s-header">
 
-             <div class="s-header__block">
-                <div class="s-header__branding">
-                    <p class="site-title">
-                        <img src="apple-touch-icon.png" alt="spef" width="75" height="75">
-                    </p>
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.svg" alt="Homepage">
+                    </a>
                 </div>
 
                 <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
             </div> <!-- end s-header__block -->
 
             <div class="row s-header__nav-wrap">
-
                 <nav class="s-header__nav">
                     <ul>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#colophon" class="smoothscroll">Contact</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
+                        <li><a href="#services" class="smoothscroll">My Services</a></li>
+                        <li><a href="#works" class="smoothscroll">My Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Work with me</a></li>
                     </ul>
-                </nav> <!-- end s-header__nav -->
+                </nav>
 
                 <ul class="s-header__social">
                     <li>
-                        <a href="#0">
+                        <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
-                            <span class="u-screen-reader-text">YouTube</span>
+                            <span class="screen-reader-text">Facebook</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
+                        <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
-                            <span class="u-screen-reader-text">Twitter</span>
+                            <span class="screen-reader-text">Twitter</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
-                            <span class="u-screen-reader-text">Github</span>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                            <span class="screen-reader-text">Instagram</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
+                        <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20.66,6.98c-0.894-1.533-2.107-2.747-3.641-3.64C15.486,2.447,13.813,2,12,2S8.514,2.447,6.98,3.34 C5.447,4.233,4.233,5.447,3.34,6.98S2,10.187,2,12s0.446,3.487,1.34,5.02c0.894,1.534,2.107,2.747,3.641,3.64 C8.514,21.553,10.187,22,12,22s3.486-0.447,5.02-1.34c1.533-0.893,2.747-2.106,3.641-3.64C21.554,15.487,22,13.813,22,12 S21.554,8.513,20.66,6.98z M12,3.66c2,0,3.772,0.64,5.32,1.919c-0.92,1.174-2.286,2.14-4.1,2.9c-1.002-1.813-2.088-3.327-3.261-4.54 C10.641,3.753,11.319,3.66,12,3.66z M5.51,6.8c0.754-0.947,1.656-1.686,2.711-2.22c1.212,1.201,2.325,2.7,3.34,4.5 c-2,0.6-4.114,0.9-6.341,0.9c-0.573,0-1.006-0.013-1.3-0.04C4.227,8.793,4.757,7.747,5.51,6.8z M3.66,12 c0-0.054,0.003-0.12,0.01-0.2c0.007-0.08,0.01-0.146,0.01-0.2c0.254,0.014,0.641,0.02,1.161,0.02c2.666,0,5.146-0.367,7.439-1.1 c0.187,0.373,0.381,0.793,0.58,1.26c-1.32,0.293-2.674,1.006-4.061,2.14S6.4,16.247,5.76,17.5C4.36,15.913,3.66,14.08,3.66,12z M12,20.34c-1.894,0-3.594-0.587-5.101-1.759C7.5,17.394,8.423,16.259,9.67,15.18c1.246-1.08,2.483-1.753,3.71-2.02 c0.772,2.133,1.293,4.339,1.56,6.62C13.966,20.153,12.986,20.34,12,20.34z M19.08,16.38c-0.666,1.066-1.526,1.94-2.58,2.621 c-0.24-2.08-0.7-4.107-1.379-6.081c0.932-0.066,1.765-0.1,2.5-0.1c0.799,0,1.686,0.034,2.659,0.1 C20.146,14.16,19.746,15.313,19.08,16.38z M17.84,11.38c-1.16,0-2.233,0.047-3.22,0.14c-0.254-0.653-0.48-1.193-0.68-1.62 c2.066-0.906,3.532-2.006,4.399-3.3c1.2,1.414,1.854,3.027,1.96,4.84C19.487,11.4,18.667,11.38,17.84,11.38z"></path></svg>
-                            <span class="u-screen-reader-text">Dribbble</span>
+                            <span class="screen-reader-text">Dribbble</span>
                         </a>
                     </li>
-                </ul>  <!-- end s-header__social -->
-
+                </ul>
             </div> <!-- end s-header__nav-wrap -->
 
         </header> <!-- end s-header -->
 
 
-        <!-- intro
+        <!-- # intro 
         ================================================== -->
-        <section id="intro" class="s-intro">
+        <section id="intro" class="s-intro target-section">
 
             <div class="row">
-                <div class="column lg-12 s-intro__content">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <span class="s-intro__bg"></span>
 
-                    <div class="s-intro__text">
-                        <h1 class="s-intro__text-huge animate-on-load">
-                            spef
+                        <h1 class="s-intro__text">
+                            We're a creative group <br>
+                            of people who design <br>
+                            influential brands and <br>
+                            digital experiences<span>.</span>
                         </h1>
-                        <h3 class="animate-on-load">Visual Artist <span>+</span> Aspiring Developer
-                        </h3>
-                    </div>
 
-                    <div class="s-intro__bg"></div>
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap">
+                <div class="column s-intro__about">
+                    <h2 class="s-intro__about-title">Hello, We Are Tyndale.</h2>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                    pariatur. Excepteur sint occaecat.
+                    </p>
 
                 </div>
             </div>
+
+            <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=30><span>30</span>+</div>
+                    <h5>Happy Customers</h5>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=35><span>35</span>+</div>
+                    <h5>Hours Work</h5>
+                    <p>
+                    Eleifend donec pretium vulputate sapien nec sagittis 
+                    aliquam malesuada. Eu scelerisque felis imperdiet proin 
+                    fermentum leo. Cursus turpis massa tincidunt.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=41><span>41</span>+</div>
+                    <h5>Coffee Drinks</h5>
+                    <p>
+                    Volutpat commodo sed egestas egestas fringilla phasellus 
+                    faucibus scelerisque. Est velit egestas dui id ornare. 
+                    Leo urna molestie at elementum.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=38><span>38</span>+</div>
+                    <h5>Completed Projects</h5> 
+                    <p>
+                    Nulla pharetra diam sit amet nisl suscipit adipiscing 
+                    bibendum est. Quis risus sed vulputate odio ut. 
+                    Lectus arcu bibendum at varius vel eu facilisis.
+                    </p>
+                </div>
+    
+            </div> <!-- end about-stats -->
 
         </section> <!-- end s-intro -->
 
 
-        <!-- about
+        <!-- # services
         ================================================== -->
-        <section id="about" class="s-about">
+        <section id="services" class="s-services target-section">
 
-
-            <div class="s-about__block s-about__intro">
-
-                <div class="row">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle animate-on-load">About Me</h2>
-    
-                        <p class="attention-getter animate-on-load">
-                            Hey, My name is Alen better known as "Spef"
-
-                            I am a Self-taught Production Artist & Programmer. I've been editing for about two years and worked with countless professional esports orginizations & athletes in the Gaming community.
-                            I specialize in Visual Effects, Corporate and Social Media based Video Editing and Graphic Designs.
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- end s-about__intro -->
-
-
-            <div class="s-about__block s-about__career">
-
-                <div class="row s-about__career-header">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">Resume</h2>
-    
-                        <p class="text-huge-title">
-                        Here is my education, work experience, & some skills I've got.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row s-about__timeline" data-animate-block>
-                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
-    
-                        <h2 class="text-subtitle">
-                            Experience
-                        </h2>
-    
-                        <div class="timeline">
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Spotify</h3>
-                                    <h5 class="timeline__meta">Product Designer</h5>
-                                    <p class="timeline__timeframe">August 2019 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Dropbox</h4>
-                                    <h5 class="timeline__meta">Frontend Developer</h5>
-                                    <p class="timeline__timeframe">March 2016 - July 2019</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                        </div> <!-- end timeline -->
-    
-                    </div> <!-- end s-about__timeline-section -->
-    
-                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
-    
-                        <h2 class="text-subtitle">
-                            Education
-                        </h2>
-    
-                        <div class="timeline">
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">University of Life</h3>
-                                    <h5 class="timeline__meta">Master in Graphic Design</h5>
-                                    <p class="timeline__timeframe">April 2015</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">School of Cool Designers</h4>
-                                    <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                    <p class="timeline__timeframe">August 2012</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                        </div> <!-- end timeline -->
-                        
-                    </div> <!-- end s-about__timeline-section -->
-    
-                </div> <!-- end about__timeline -->
-
-                <div class="row s-about__skills" data-animate-block>
-                    <div class="column lg-12" data-animate-el>
-    
-                        <h2 class="text-subtitle">
-                            Skills & Expertise
-                        </h2>
-    
-                        <ul class="skill-bars">
-                            <li>
-                            <div class="progress percent95"></div>
-                            <strong>HTML & SCSS</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent85"></div>
-                            <strong>Javascript ES6+</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent70"></div>
-                            <strong>React</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent75"></div>
-                            <strong>Node JS</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent85"></div>
-                            <strong>Wordpress</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent90"></div>
-                            <strong>Figma</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent85"></div>
-                            <strong>Sketch</strong>
-                            </li>
-                            <li>
-                            <div class="progress percent75"></div>
-                            <strong>Illustrator</strong>
-                            </li>
-                        </ul>
-    
-                    </div>
-                </div> <!-- end s-about__skills -->
-
-                <div class="row s-about__clients" data-animate-block>
-                    <div class="column lg-12" data-animate-el>
-    
-                        <h2 class="text-pretitle">Selected Clients</h2>
-    
-                        <ul class="clients-list text-huge-title">
-                            <li><a href="#0">Microsoft</a></li>
-                            <li><a href="#0">Amazon</a></li>
-                            <li><a href="#0">Solana</a></li>
-                            <li><a href="#0">Nike</a></li>
-                            <li><a href="#0">Adidas</a></li>
-                            <li><a href="#0">Polkadot</a></li>
-                            <li><a href="#0">Google</a></li>
-                            <li><a href="#0">Atom</a></li>
-                            <li><a href="#0">Square</a></li>
-                            <li><a href="#0">Brave</a></li>
-                        </ul>
-    
-                    </div>
-                </div> <!-- end s-about__clients-->
-
-            </div> <!-- end s-about__career -->
-
-        </section> <!-- end s-about -->
-
-
-        <!-- # works
-        ================================================== -->
-        <section id="works" class="s-works">
-
-            <div class="row">
+            <div class="row section-header has-bottom-sep">
                 <div class="column lg-12">
-                    <h2 class="text-pretitle">Selected Projects</h2>
-
-                    <p class="text-huge-title">
-                    Selected Projects I Have Worked On.
-                    </p>
+                    <h3 class="text-pretitle">What We Do</h3>
+                    <h1 class="text-display-title">
+                        We’ve got everything you <br>
+                        need to launch and grow <br>
+                        your business
+                    </h1>
                 </div>
-            </div>
+            </div> <!-- end section-header -->
+    
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--product-design"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Product Design</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                        Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                        Sunt suscipit voluptas ipsa in tempora esse soluta sint aliquam rhoncus elit.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Branding</h3>
+                        <p>Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Quis risus sed vulputate 
+                        odio ut. Lectus arcu bibendum at varius vel. Lorem ipsum dolor sit amet consectetur adipiscing 
+                        elit pellentesque. In nulla posuere sollicitudin aliquam ultrices.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Frontend Development</h3>
+                        <p>Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Eu scelerisque felis 
+                        imperdiet proin fermentum leo. Cursus turpis massa tincidunt dui. Quis commodo odio aenean sed 
+                        adipiscing diam donec adipiscing. Congue mauris rhoncus elit.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--research"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">UX Research</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                        Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                        Sunt suscipit voluptas ipsa in tempora esse soluta sint donec adipiscing.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--illustration"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Illustration</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna. Lectus vestibulum 
+                        mattis ullamcorper velit sed ullamcorper morbi. Sit amet aliquam.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">E-Commerce</h3>
+                        <p>Nullam eget felis eget nunc. Adipiscing commodo elit at imperdiet dui accumsan. Condimentum 
+                        mattis pellentesque id nibh tortor id aliquet lectus proin. Orci eu lobortis elementum nibh 
+                        tellus. Tortor vitae purus faucibus ornare suspendisse.
+                        </p>
+                    </div>
+                </div>
+    
+            </div> <!-- end services-list -->
 
-            <div class="row folio-list block-lg-one-half block-stack-on-550" data-animate-block>
+        </section> <!-- end s-services -->
 
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+
+        <!-- ## works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Recent Works</h3>
+                    <h1 class="text-display-title">Here are some of our favorite projects we have done lately. Feel free to  check them out.</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-kinfolk.jpg" Title="The Kinfolk" data-size="1050x700">
-                                <img src="images/portfolio/skaterboy.jpg" 
-                                     srcset="images/portfolio/kinfolk.jpg 1x, images/portfolio/kinfolk@2x.jpg 2x" alt="">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tulips.jpg" title="The Red Wheel" data-size="1050x700">
+                                <img src="images/portfolio/tulips.jpg" 
+                                     srcset="images/portfolio/tulips.jpg 1x, images/portfolio/tulips@2x.jpg 2x" alt="">
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Branding</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">The Kinfolk</h4>
+                            <div class="folio-item__cat">Branding</div>
+                            <h4 class="folio-item__title">Coffee & Tulips</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-grayscale.jpg" title="Grayscale" data-size="1050x700">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-minimalismo.jpg" title="Music Life" data-size="1050x700">
                                 <img src="images/portfolio/minimalismo.jpg" 
-                                     srcset="images/portfolio/grayscale.jpg 1x, images/portfolio/grayscale@2x.jpg 2x" alt="">
+                                     srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x" alt="">
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">UI Design</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">Grayscale</h4>
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Minimalismo</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-skaterboy.jpg" Title="OI Logo" data-size="1050x700">
+                                <img src="images/portfolio/skaterboy.jpg" 
+                                     srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Product Design</div>
+                            <h4 class="folio-item__title">Skaterboy</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-rucksack.jpg" title="Corrugated Sheets" data-size="1050x700">
+                                <img src="images/portfolio/rucksack.jpg" 
+                                     srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Rucksack</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">E-Commerce</div>
+                            <h4 class="folio-item__title">Wooocraft</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                            Project Link
+                        </a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
                                 <img src="images/portfolio/lamp.jpg" 
@@ -369,74 +397,64 @@
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Branding</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
+                            <div class="folio-item__cat">Product Design</div>
                             <h4 class="folio-item__title">The Lamp</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tulips.jpg" title="Caffein & Tulips" data-size="1050x700">
-                                <img src="images/portfolio/tulips.jpg" 
-                                     srcset="images/portfolio/tulips.jpg 1x, images/portfolio/tulips@2x.jpg 2x" alt="">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-grayscale.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/grayscale.jpg" 
+                                     srcset="images/portfolio/grayscale.jpg 1x, images/portfolio/grayscale@2x.jpg 2x" alt="">
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Web Design</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">
-                                Caffein & Tulips
-                            </h4>
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Grayscale</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tropical.jpg" title="Tropical" data-size="1050x700">
-                                <img src="images/portfolio/rucksack.jpg" 
-                                     srcset="images/portfolio/tropical.jpg 1x, images/portfolio/tropical@2x.jpg 2x" alt="">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shutterbug.jpg" title="The Red Wheel" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Product Design</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">Tropical</h4>
+                            <div class="folio-item__cat">Branding</div>
+                            <h4 class="folio-item__title">Lady Shutterbug</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column" data-animate-el>
-                    <div class="folio-item">
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
                         <div class="folio-item__thumb">
-                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/woodcraft.jpg" 
-                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-fuji.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg" 
+                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
                             </a>
                         </div>
                         <div class="folio-item__info">
-                            <div class="folio-item__meta">
-                                <span class="cat">Branding</span>
-                                <a href="https://www.behance.net/" title="Project Link" class="project-link">Project Link</a>
-                            </div>
-                            <h4 class="folio-item__title">Woodcraft</h4>
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Retro Cam</h4>
                         </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                         <div class="folio-item__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                         </div>
@@ -445,85 +463,119 @@
     
             </div> <!-- folio-list -->
 
-            <div class="row testimonials">
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+
+                    <h3 class="text-clients-title" data-animate-el>
+                        We've had the priveledge with working with <br> 
+                        some of the largest and most iconic brands
+                    </h3>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/atom.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/github.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/medium.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/steam.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div> <!-- end clients -->
+
+                </div> <!-- end column -->
+            </div> <!-- end clients-outer -->
+
+            <div class="video-block">
+                <span class="video-block__bg-left"></span>
+                <span class="video-block__bg-right"></span>
+
+                <div class="video-block__content">
+                    <a href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                    </a>
+
+                    <p class="video-caption">
+                        Watch Video
+                    </p>
+                </div>
+            </div> <!-- end video-block -->
+
+            <div class="row testimonials" data-animate-block>
                 <div class="column lg-12">
     
-                    <div class="swiper testimonial-slider">
+                    <div class="swiper-container testimonial-slider" data-animate-el>
     
                         <div class="swiper-wrapper">
 
                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Tim Cook</strong>
+                                        <span>CEO, Apple</span>
+                                    </cite>
+                                </div>
                                 <p>
                                 Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
                                 Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
                                 Laudantium quia consequatur molestias.
                                 </p>
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>John Rockefeller</strong>
-                                        <span>Standard Oil Co.</span>
-                                    </cite>
-                                </div>
                             </div> <!-- end testimonial-slider__slide -->
             
                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Sundar Pichai</strong>
+                                        <span>CEO, Google</span>
+                                    </cite>
+                                </div>
                                 <p>
                                 Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
                                 Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
                                 Quasi voluptas eius distinctio. Atque eos maxime.
                                 </p>
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>Andrew Carnegie</strong>
-                                        <span>Carnegie Steel Co.</span>
-                                    </cite>
-                                </div>
                             </div> <!-- end testimonial-slider__slide -->
             
                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Satya Nadella</strong>
+                                        <span>CEO, Microsoft</span>
+                                    </cite>
+                                </div>
                                 <p>
                                 Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
                                 Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
                                 Voluptatem dignissimos ut.
                                 </p>
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>John Morgan</strong>
-                                        <span>JP Morgan & Co.</span>
-                                    </cite>
-                                </div>
                             </div> <!-- end testimonial-slider__slide -->
-
+    
                             <div class="testimonial-slider__slide swiper-slide">
-                                <p>
-                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                Quasi voluptas eius distinctio. Atque eos maxime.
-                                </p>
                                 <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
                                     <cite class="testimonial-slider__cite">
-                                        <strong>Henry Ford</strong>
-                                        <span>Ford Motor Co.</span>
+                                        <strong>Jeff Bezos</strong>
+                                        <span>CEO, Amazon</span>
                                     </cite>
                                 </div>
+                                <p>
+                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                </p>
                             </div> <!-- end testimonial-slider__slide -->
         
                         </div> <!-- end swiper-wrapper -->
-
-                        <div class="testimonial-slider__next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
-                        </div>
-                        <div class="testimonial-slider__prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
-                        </div>
     
                         <div class="swiper-pagination"></div>
     
-                    </div> <!-- end testimonial-slider -->
+                    </div> <!-- end swiper-container -->
     
                 </div> <!-- end column -->
             </div> <!-- end row testimonials -->
@@ -531,79 +583,89 @@
         </section> <!-- end s-works -->
 
 
-        <!-- # site footer
+        <!-- ## contact
         ================================================== -->
-        <footer id="colophon" class="s-footer">
+        <section id="contact" class="s-contact target-section">
 
-            <div class="row s-footer__contact-header">
+            <div class="row section-header section-header--dark"">
                 <div class="column lg-12">
-                    <h2 class="text-pretitle">Get In Touch</h2>
-
-                    <p class="text-huge-title">
-                        Feel free to reach out if you wanna collaborate with me, or simply have a chat.
-                    </p>
+                    <h3 class="text-pretitle">Get In Touch</h3>
+                    <h1 class="text-display-title">
+                        Do you have an idea or an epic project in mind? Let’s work together.
+                    </h1>
                 </div>
-            </div> <!-- end s-footer__content -->
+            </div>
 
-            <div class="row s-footer__contact-content">
+            <div class="row row-x-center text-center s-contact__content">
+                <div class="column lg-12">
+                    <p class="lead">
+                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                    quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Quasi sed at voluptas corrupti eius distinctio.
+                    </p>
+                    <div class="btn-wrap">
+                        <a href="#0" class="btn btn--primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"></path></svg>
+                            Write An Email
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="column lg-5 md-6 stack-on-900 left-block">
-                    <p>
-                    Dolorum est et corporis. Unde nobis quo rerum aspernatur cum dolorem 
-                    tempore et. Beatae atque nobis qui nam nulla nihil sunt quis. Earum 
-                    minima cum consectetur ab repudiandae sed esse dolores.
+            <footer class="s-footer">
 
-                    <div class="s-footer__buttons">
-                        <a href="mailto:sayhello@augustine.com" class="btn btn--primary u-fullwidth">Say Hello</a>
-                        <a href="#0" class="btn btn--stroke u-fullwidth">Get My CV</a>
+                <div class="row s-footer__top">
+                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Where to Find Us</h4>
+        
+                        <p>
+                        1600 Amphitheatre Parkway <br>
+                        Mountain View, California <br>
+                        94043  US
+                        </p>
                     </div>
 
-                    </p>
-                </div>
-
-                <div class="column lg-4 md-5 stack-on-900 right-block">
-
-                    <div class="s-footer__contact-info" >
-                        <h2 class="text-subtitle">
-                            Start A Project
-                        </h2>
-                        <ul class="link-list">
-                            <li><a href="mailto:sayhello@augustine.com">sayhello@augustine.com</a></li>
-                            <li><a href="tel:+1975432345">+197 543 2345</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="s-footer__social">
-                        <h2 class="text-subtitle">
-                            Connect
-                        </h2>
-                        <ul class="link-list">
+                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Follow Us</h4>
+        
+                        <ul class="contact-list">
                             <li><a href="#0">Facebook</a></li>
                             <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Github</a></li>
-                            <li><a href="#0">Dribbble</a></li>
+                            <li><a href="#0">Instagram</a></li>
                         </ul>
                     </div>
-                    
-                </div>
-            </div> <!-- end s-footer__contact-content -->
+        
+                    <div class="column lg-3 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Contact Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="mailto:#0">info@tyndale.com</a></li>
+                            <li><a href="tel:197-543-2345">+197 543 2345</a></li>
+                            <li><a href="tel:197-123-9876">+197 123 9876</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- end s-footer__top -->
 
-            <div class="row s-footer__bottom">
-                <div class="column ss-copyright">
-                    <span>© Copyright Augustine 2022</span> 
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                </div>
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright Tyndale 2021</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
 
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
-                    </a>
-                </div>
-            </div> <!-- end s-footer__bottom-->
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__top -->
 
-        </footer> <!-- end s-footer -->
+            </footer>
 
-    </div> <!-- end s-pagewrap -->
+        </section> <!-- end s-contact -->
+
+    </div> <!-- end -s-pagewrap -->
 
 
     <!-- photoswipe background
