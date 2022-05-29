@@ -73,11 +73,11 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
     --font-1    : "Inter", sans-serif;
-    --font-2    : "Castoro", serif;
+    --font-2    : "Raleway", serif;
 
     /* monospace
     */
@@ -92,7 +92,7 @@
     /* color-1(#5F9295)
      * color-2(#2D2327)
      */
-    --color-1                      : hsla(183, 22%, 48%, 1);
+    --color-1                      : rgb(95, 147, 149);
     --color-2                      : hsla(336, 13%, 16%, 1);
 
     /* theme color variations
@@ -149,10 +149,10 @@
 
     /* text
      */
-    --color-text                   : var(--color-gray-17);
-    --color-text-dark              : var(--color-gray-19);
-    --color-text-light             : var(--color-gray-12);
-    --color-placeholder            : var(--color-gray-12);
+    --color-text                   : var(--color-white);
+    --color-text-dark              : var(--color-gray-3);
+    --color-text-light             : var(--color-gray-19);
+    --color-placeholder            : var(--color-black);
 
     /* buttons
      */
@@ -177,7 +177,7 @@
 
     /* others
      */
-    --color-body                   : #CFE6E8;
+    --color-body                   : #080d10    ;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
