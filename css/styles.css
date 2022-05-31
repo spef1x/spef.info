@@ -3231,7 +3231,7 @@ img.u-pull-left {
 
 .s-intro__text {
     font-family    : var(--font-2);
-    font-weight    : 500;
+    font-weight    : 600;
     font-size      : calc(var(--text-huge) * var(--text-huge-multiplier));
     line-height    : var(--text-huge-line-height);
     letter-spacing : normal;
@@ -3243,8 +3243,8 @@ img.u-pull-left {
 
 .s-intro__text span {
     color : var(--color-3);
-    font-size: 1.5cm;
-    
+    font-size: 1.3cm;
+    font-weight    : 300;
 }
 
 /* --------------------------------------------------------------------
