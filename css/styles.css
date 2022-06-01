@@ -2893,7 +2893,7 @@ img.u-pull-left {
     z-index  : 4;
     position : absolute;
     top      : -0.6rem;
-    left     : 1rem;
+    left     : 1.5rem;
 }
 
 .s-header__logo a {
@@ -3231,8 +3231,9 @@ img.u-pull-left {
 
 .s-intro__text {
     font-family    : var(--font-2);
-    font-weight    : 500;
-    font-size      : 58px;
+    font-weight    : 600;
+    font-size      : calc(var(--text-huge) * var(--text-huge-multiplier));
+    line-height    : var(--text-huge-line-height);
     letter-spacing : normal;
     text-align     : center;
     margin         : 0;
@@ -3242,8 +3243,8 @@ img.u-pull-left {
 
 .s-intro__text span {
     color : var(--color-3);
-    font-size: 1.5cm;
-    
+    font-size: 1.3cm;
+    font-weight    : 300;
 }
 
 /* --------------------------------------------------------------------
